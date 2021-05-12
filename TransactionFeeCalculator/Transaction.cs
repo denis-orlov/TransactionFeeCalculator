@@ -62,7 +62,7 @@ namespace TransactionFeeCalculator
         /// <returns>Transaction string representation with calculated fee.</returns>
         public override string ToString()
         {
-            return $"{Date.ToString("yyyy-MM-dd")} {MerchantName} {Fee.ToString("0.00", CultureInfo.InvariantCulture)}";
+            return $"{Date:yyyy-MM-dd} {MerchantName} {Fee.ToString("0.00", CultureInfo.InvariantCulture)}";
         }
     }
 }
